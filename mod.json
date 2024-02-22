@@ -1,0 +1,24 @@
+{
+	"geode": "2.0.0-beta.12",
+	"gd": "2.204",
+	"version": "v1.0.0",
+	"id": "naxrin.garage_in_editor",
+	"name": "Garage In Editor",
+	"developer": "Naxrin",
+	"description": "This mod does nothing but adding an extra icon garage entry at the Editor level entrance. Why not?",
+	"tags": ["performance"],
+	"repository": "https://github.com/Naxrin/Garage-in-Editor",
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": "v1.0.0"			
+		}],
+	"settings":{
+		"left": {
+            "name": "Transparent Texture Fit",
+            "description": "Move the added Button 8 units left to fit some Transparent textures.\nRead mod description for more details",
+            "type": "bool",
+            "default": false
+        }
+	}
+}
