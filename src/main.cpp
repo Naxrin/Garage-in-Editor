@@ -10,17 +10,20 @@ class $modify(MyLayer, EditLevelLayer) {
 		if (!EditLevelLayer::init(p0)) {
 			return false;
 			}
-		
+		// reference
+		auto reference = this->getChildByID("level-actions-menu");
+		auto refposX = reference->getPositionX();
+		auto refposY = reference->getPositionY();
+
 		auto menu = CCMenu::create();
 		menu->setID("garage-menu");
-		menu->setPosition(492.f, 295.f);
-		if (Mod::get()->getSettingValue<bool>("left"))
-			menu->setPosition(484.f, 295.f);
+		float offset = Mod::get()->getSettingValue<double>("offset");
+			menu->setPosition(refposX-55.f+offset, 2*refposY-72.f);
 		menu->setContentSize(CCSize(569.f, 320.f));
 		this->addChild(menu);
 
 		auto btn = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
-		btn->setPosition(CCPoint(18.875, 35.520));
+		btn->setPosition(CCPoint(18.875, 35.250));
 		auto myButton = CCMenuItemSpriteExtra::create(
 			btn,
 			this,
@@ -30,6 +33,10 @@ class $modify(MyLayer, EditLevelLayer) {
 		myButton->m_destPosition = CCPoint(0.f, -8.f);
 		myButton->m_offset = CCPoint(0.2, 0.2);
 		menu->addChild(myButton);
+		if (Mod::get()->getSettingValue<bool>("transparent")){
+		this->getChildByID("level-name-background")->setVisible(false);
+		this->getChildByID("description-background")->setVisible(false);
+		}
 		this->updateLayout();
 		return true;
 	}
