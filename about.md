@@ -5,7 +5,7 @@ And the rope does wholly the same thing with the one in *LevelInfoLayer* (entran
 
 ### Settings
 The only mod option *Transparent Texture Fit* is meant to fit some texture packs which set the two deep blue frames to Transparent, the rope's position is set to (484, 295) if Enabled and (492, 295) if Disabled.
-Brwose Readme.md in my Github Repo for detailed desc.
+Browse Readme.md in my Github Repo for detailed desc.
 
-### special Thanks
+### Special Thanks
 Huge Thanks to @TheSillyDoggo for helping with the callback function!

@@ -9,5 +9,5 @@ The only mod option *Transparent Texture Fit* is meant to fit some texture packs
 In the LevelInfoLayer Robtop sets the garageRope's position to (484, 295), but seeing from the image below, if it's still set to my added one, it's too close to a deep blue title frame and look bad.
 ![img](desc.png)
 
-### special Thanks
+### Special Thanks
 Huge Thanks to @TheSillyDoggo for helping with the callback function!
