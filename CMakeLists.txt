@@ -3,8 +3,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(SKIP_BUILDING_CODEGEN OFF)
 
-project(GarageinEditor VERSION 1.2.0)
+project(GarageinEditor VERSION 1.1.0)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
