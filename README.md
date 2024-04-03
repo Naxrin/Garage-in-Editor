@@ -8,5 +8,5 @@ And the rope does wholly the same thing with the one in *LevelInfoLayer* (entran
 *Remove Frame* sets the blue Level Title Frame and Level Desc Frame to invisible to fix the UI issue. It's default to activate.
 ![img](desc.png)
 
-### special Thanks
+### Special Thanks
 Huge Thanks to @TheSillyDoggo for helping with the callback function!
