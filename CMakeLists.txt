@@ -5,7 +5,7 @@ set(CMAKE_OSX_ARCHITECTURES "x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set(SKIP_BUILDING_CODEGEN OFF)
 
-project(GarageinEditor VERSION 1.1.0)
+project(GarageinEditor VERSION 2.2.0)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
@@ -20,4 +20,4 @@ endif()
 
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
-setup_geode_mod(${PROJECT_NAME})
+setup_geode_mod(${PROJECT_NAME} EXTERNALS geode.node-ids:1.12.0)
