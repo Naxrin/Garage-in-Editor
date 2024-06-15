@@ -1,3 +1,6 @@
+# 2.2.0-beta.1
+Update for Geode 3.0.0-beta.1 @ GD 2.206
+
 # 1.2.0
 Multi-platform support!
 
