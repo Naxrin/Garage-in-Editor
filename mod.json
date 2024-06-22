@@ -16,7 +16,7 @@
 		{
 			"id": "geode.node-ids",
 			"version": "v1.12.0",
-			"importance":"required",
+			"importance":"required"
 		}
 	],
 	"settings":{
