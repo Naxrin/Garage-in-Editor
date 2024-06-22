@@ -1,36 +1,38 @@
 {
-	"geode": "3.0.0-beta.1",
+	"geode": "3.0.0-beta.5",
 	"gd": {
-		"win":"2.206",
-		"android":"2.206",
-		"mac":"2.206"
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
 	},
 	"version": "v2.2.0-beta.1",
 	"id": "naxrin.garage_in_editor",
 	"name": "Garage In Editor",
 	"developer": "Naxrin",
 	"description": "This mod does nothing but adding an extra icon garage entry at the Editor level entrance cuz why not?",
-	"tags": ["Cosmetic"],
+	"tags": ["interface"],
 	"repository": "https://github.com/Naxrin/Garage-in-Editor",
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
-			"version": "v1.12.0"			
-		}],
+			"version": "v1.12.0",
+			"importance":"required",
+		}
+	],
 	"settings":{
 		"offset": {
-            "name": "Placement Offset",
-            "description": "Move the added Button left or right if you want.\nRead mod description for more details",
-            "type": "float",
-            "default": 0,
-			"min":-10,
-			"max":10
-        },
+			"name": "Placement Offset",
+            		"description": "Move the added Button left or right if you want.\nRead mod description for more details",
+            		"type": "float",
+            		"default": 0,
+			"min": -10,
+			"max": 10
+        	},
 		"transparent": {
-            "name": "Remove Frame",
-            "description": "Remove the two frames in EditLevelLayer",
-            "type": "bool",
-            "default": false
-        }
+            		"name": "Remove Frame",
+            		"description": "Remove the two frames in EditLevelLayer",
+            		"type": "bool",
+            		"default": false
+        	}
 	}
 }
