@@ -4,8 +4,10 @@ This mod does nothing but adds an extra entry rope button in *EditLevelLayer* (t
 And the rope does wholly the same thing with the one in *LevelInfoLayer* (entrance of a saved level).
 
 ### Settings
-The only mod option *Transparent Texture Fit* is meant to fit some texture packs which set the two deep blue frames to Transparent, the rope's position is set to (484, 295) if Enabled and (492, 295) if Disabled.
-Browse Readme.md in my Github Repo for detailed desc.
+*Placement Offset*  
+Moves the added rope left or right regarding the value is set to negative or positive.  
+*Transparent Texture Fit*  
+Removes the two blue frames to avoid them getting covered by the garage rope and makes the UI looks bad.  
 
 ### Special Thanks
 Huge Thanks to @TheSillyDoggo for helping with the callback function!
