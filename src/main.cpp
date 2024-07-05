@@ -28,7 +28,7 @@ class $modify(EditLevelLayer) {
 			menu_selector(LevelInfoLayer::onGarage));
 		myButton->m_animationType = MenuAnimationType::Move;
 		myButton->m_startPosition = CCPoint(18.875, 35.25);
-		myButton->m_obPosition = CCPoint(0.f, -8.f);
+		myButton->m_destPosition = CCPoint(0.f, -8.f);
 		myButton->m_offset = CCPoint(0.2, 0.2);
 		menu->addChild(myButton);
 		if (Mod::get()->getSettingValue<bool>("transparent")){
