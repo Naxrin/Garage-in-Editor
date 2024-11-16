@@ -5,7 +5,7 @@
 		"android": "*",
 		"mac": "*"
 	},
-	"version": "v3.2.0",
+	"version": "v3.2.0-alpha.1",
 	"id": "naxrin.garage_in_editor",
 	"name": "Garage In Editor",
 	"developer": "Naxrin",
