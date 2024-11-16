@@ -1,11 +1,11 @@
 {
-	"geode": "3.2.0",
+	"geode": "4.0.0-beta.1",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206"
+		"win": "*",
+		"android": "*",
+		"mac": "*"
 	},
-	"version": "v2.2.0",
+	"version": "v3.2.0-alpha.1",
 	"id": "naxrin.garage_in_editor",
 	"name": "Garage In Editor",
 	"developer": "Naxrin",
@@ -15,7 +15,7 @@
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
-			"version": "v1.12.0",
+			"version": "v1.17.0",
 			"importance":"required"
 		}
 	],
@@ -26,7 +26,14 @@
             		"type": "float",
             		"default": 0,
 			"min": -10,
-			"max": 10
+			"max": 10,
+			"control": {
+			        "arrows": true,
+			        "arrow-step": 0.1,
+			        "slider": true,
+			        "slider-step": 0.1,
+			        "input": false
+			}
         	},
 		"transparent": {
             		"name": "Remove Frame",
