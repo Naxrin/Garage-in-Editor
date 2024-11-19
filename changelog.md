@@ -1,6 +1,9 @@
+# 3.2.1-alpha.1
+Almost nothing but fix a gd version tag.  
+
 # 3.2.0-alpha.1
-Bump version to Geode 4.x@GD 2.2074
-<cy>no animation for now, plz wait a while</c>
+Bump version to Geode 4.x@GD 2.2074  
+<cy>no animation for now, plz wait a while</c>  
 
 # 2.2.0
 Fix the weird old setting descs in about.md  
