@@ -1,3 +1,6 @@
+# 3.2.1
+Animation returns
+
 # 3.2.1-alpha.1
 Almost nothing but fix a gd version tag.  
 
