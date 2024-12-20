@@ -28,8 +28,10 @@ class $modify(EditLevelLayer) {
 			menu_selector(LevelInfoLayer::onGarage));
 		myButton->m_animationType = MenuAnimationType::Move;
 		myButton->m_startPosition = CCPoint(18.875, 35.25);
-		myButton->m_destPosition = CCPoint(0.f, -8.f);
-		myButton->m_offset = CCPoint(0.2, 0.2);
+		//myButton->m_destPosition = CCPoint(0.f, -8.f);
+		myButton->m_offset = CCPoint(0.f, -8.f);
+		myButton->m_duration = 0.2;
+		myButton->m_unselectedDuration = 0.2;
 		menu->addChild(myButton);
 		if (Mod::get()->getSettingValue<bool>("transparent")){
 		this->getChildByID("level-name-background")->setVisible(false);
