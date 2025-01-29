@@ -1,26 +1,30 @@
+# 3.3.0
+LevelSelectLayer addition  
+code polish  
+  
 # 3.2.1
-Animation returns
-
+Animation returns  
+  
 # 3.2.1-alpha.1
 Almost nothing but fix a gd version tag.  
-
+  
 # 3.2.0-alpha.1
 Bump version to Geode 4.x@GD 2.2074  
 <cy>no animation for now, plz wait a while</c>  
-
+  
 # 2.2.0
 Fix the weird old setting descs in about.md  
 remove the odd *beta* version tag  
-
+  
 # 2.2.0-beta.1
 Update for Geode 3.0.0-beta.1 @ GD 2.206  
-
+  
 # 1.2.0
 Multi-platform support!  
-
+  
 # 1.1.0
 1. Fix position bug in Non-16/9 ratio display!  
 2. float slider to freely customize the offset yourself!  
-
+  
 # 1.0.0
 wtf is that Initial Release  
