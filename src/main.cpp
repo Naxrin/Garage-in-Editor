@@ -1,46 +1,79 @@
 #include <Geode/Geode.hpp>
-#include <Geode/modify/EditLevelLayer.hpp>
 
 using namespace geode::prelude;
 
+#include <Geode/modify/EditLevelLayer.hpp>
 class $modify(EditLevelLayer) {
-	bool init(GJGameLevel* p0) {
-		if (!EditLevelLayer::init(p0)) {
+	bool init(GJGameLevel* p) {
+		if (!EditLevelLayer::init(p))
 			return false;
-			}
-		// reference
-		auto reference = this->getChildByID("level-actions-menu");
-		auto refposX = reference->getPositionX();
-		auto refposY = reference->getPositionY();
 
+		// win size reference
+		auto winSize = CCDirector::sharedDirector()->getWinSize();
+
+		// menu
 		auto menu = CCMenu::create();
 		menu->setID("garage-menu");
 		float offset = Mod::get()->getSettingValue<double>("offset");
-			menu->setPosition(refposX-55.f+offset, 2*refposY-72.f);
-		menu->setContentSize(CCSize(569.f, 320.f));
+			menu->setPosition(winSize.width - 142.f + offset, winSize.height - 25.f);
 		this->addChild(menu);
 
-		auto btn = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
-		btn->setPosition(CCPoint(18.875, 35.250));
-		auto myButton = CCMenuItemSpriteExtra::create(
-			btn,
+		// button
+		auto spr = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
+		spr->setPosition(CCPoint(18.875, 35.250));
+		auto btn = CCMenuItemSpriteExtra::create(
+			spr,
 			this,
 			menu_selector(LevelInfoLayer::onGarage));
-		myButton->m_animationType = MenuAnimationType::Move;
-		myButton->m_startPosition = CCPoint(18.875, 35.25);
-		//myButton->m_destPosition = CCPoint(0.f, -8.f);
-		myButton->m_offset = CCPoint(0.f, -8.f);
-		myButton->m_duration = 0.2;
-		myButton->m_unselectedDuration = 0.2;
-		menu->addChild(myButton);
+		btn->m_animationType = MenuAnimationType::Move;
+		btn->m_startPosition = CCPoint(18.875, 35.25);
+		btn->m_offset = CCPoint(0.2, 0.2);
+		menu->addChild(btn);
+
+		// transparent
 		if (Mod::get()->getSettingValue<bool>("transparent")){
-		this->getChildByID("level-name-background")->setVisible(false);
-		this->getChildByID("description-background")->setVisible(false);
+			this->getChildByID("level-name-background")->setVisible(false);
+			this->getChildByID("description-background")->setVisible(false);
 		}
-		this->updateLayout();
+
 		return true;
 	}
 };
+
+#include <Geode/modify/LevelSelectLayer.hpp>
+class $modify(LevelSelectLayer) {
+	bool init(int page) {
+		if (!LevelSelectLayer::init(page))
+			return false;
+		if (!Mod::get()->getSettingValue<bool>("official"))
+			return true;
+
+		// win size reference
+		auto winSize = CCDirector::sharedDirector()->getWinSize();
+
+		// menu
+		auto menu = CCMenu::create();
+		menu->setID("garage-menu");
+		float offset = Mod::get()->getSettingValue<double>("offset");
+			menu->setPosition(winSize.width - 142.f + offset, winSize.height - 25.f);
+		this->addChild(menu);
+
+		// button
+		auto spr = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
+		spr->setPosition(CCPoint(18.875, 35.250));
+		auto btn = CCMenuItemSpriteExtra::create(
+			spr,
+			this,
+			menu_selector(LevelInfoLayer::onGarage));
+		btn->m_animationType = MenuAnimationType::Move;
+		btn->m_startPosition = CCPoint(18.875, 35.25);
+		btn->m_offset = CCPoint(0.2, 0.2);
+		menu->addChild(btn);
+		
+		return true;
+	}
+};
+
 /*
 class $modify(LevelInfoLayer) {
 	bool init(GJGameLevel* p0, bool p1) {
