@@ -15,7 +15,7 @@ class $modify(EditLevelLayer) {
 		auto menu = CCMenu::create();
 		menu->setID("garage-menu");
 		float offset = Mod::get()->getSettingValue<double>("offset");
-			menu->setPosition(winSize.width - 142.f + offset, winSize.height - 25.f);
+			menu->setPosition(winSize.width - 85.f + offset, winSize.height - 25.f);
 		this->addChild(menu);
 
 		// button
@@ -27,7 +27,7 @@ class $modify(EditLevelLayer) {
 			menu_selector(LevelInfoLayer::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
 		btn->m_startPosition = CCPoint(18.875, 35.25);
-		btn->m_offset = CCPoint(0.2, 0.2);
+		btn->m_offset = CCPoint(0.f, -8.f);
 		menu->addChild(btn);
 
 		// transparent
@@ -55,7 +55,7 @@ class $modify(LevelSelectLayer) {
 		auto menu = CCMenu::create();
 		menu->setID("garage-menu");
 		float offset = Mod::get()->getSettingValue<double>("offset");
-			menu->setPosition(winSize.width - 142.f + offset, winSize.height - 25.f);
+			menu->setPosition(winSize.width - 85.f + offset, winSize.height - 25.f);
 		this->addChild(menu);
 
 		// button
@@ -67,7 +67,7 @@ class $modify(LevelSelectLayer) {
 			menu_selector(LevelInfoLayer::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
 		btn->m_startPosition = CCPoint(18.875, 35.25);
-		btn->m_offset = CCPoint(0.2, 0.2);
+		btn->m_offset = CCPoint(0.f, -8.f);
 		menu->addChild(btn);
 		
 		return true;
