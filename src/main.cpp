@@ -64,7 +64,7 @@ class $modify(LevelSelectLayer) {
 		auto btn = CCMenuItemSpriteExtra::create(
 			spr,
 			this,
-			menu_selector(LevelInfoLayer::onGarage));
+			menu_selector(MenuLayer::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
 		btn->m_startPosition = CCPoint(18.875, 35.25);
 		btn->m_offset = CCPoint(0.f, -8.f);
