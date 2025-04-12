@@ -6,7 +6,7 @@
 		"mac":"2.2074",
 		"ios":"2.2074"
 	},
-	"version": "v3.3.2",
+	"version": "v3.3.3",
 	"id": "naxrin.garage_in_editor",
 	"name": "Garage In Editor",
 	"developer": "Naxrin",
@@ -16,7 +16,7 @@
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
-			"version": "v1.17.0"			
+			"version": "v1.20.1"			
 		}],
 	"settings":{
 		"offset": {
