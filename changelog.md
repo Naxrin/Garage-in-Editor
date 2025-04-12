@@ -1,3 +1,6 @@
+# 3.3.3
+iOS support (not pretty sure ios geode does exist though)
+
 # 3.3.2
 Make the transition of LevelSelectLayer's garage rope more human-like;  
 and the garage menu from LevelSelectLayer will return to LevelSelectLayer instead of MenuLayer (main menu) from now on  
