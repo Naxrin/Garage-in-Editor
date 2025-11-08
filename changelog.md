@@ -1,12 +1,16 @@
+# 3.4.0
+- Better mod desc
+- This mod is complete as planned and no more features will be added during this gd version
+
 # 3.3.3
-iOS support (not pretty sure ios geode does exist though)
+- iOS support (not pretty sure ios geode does exist though)
 
 # 3.3.2
 Make the transition of LevelSelectLayer's garage rope more human-like;  
 and the garage menu from LevelSelectLayer will return to LevelSelectLayer instead of MenuLayer (main menu) from now on  
   
 # 3.3.1
-Fix the LevelSelectLayer button usually not working
+Fix the LevelSelectLayer button usually not working  
 
 # 3.3.0
 LevelSelectLayer addition  
