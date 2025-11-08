@@ -1,5 +1,6 @@
 # 3.4.0
 - Better mod desc
+- Permissive for earlier geode version
 - This mod is complete as planned and no more features will be added during this gd version
 
 # 3.3.3
