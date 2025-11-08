@@ -1,7 +1,7 @@
 # Garage In Editor
 This mod does nothing but adds an extra entry rope button in
 - **EditLevelLayer** (the menu where you edit / play / publish your level)
-- **LevelSelectLayer** (the official levels browser, optional)
+- **LevelSelectLayer** (the official levels browser, optional)  
 And the rope does exactly the same as the one in **LevelInfoLayer** (entrance of a saved level) does.
 
 ### Settings
