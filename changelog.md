@@ -1,8 +1,8 @@
-# 4.4.0
+# 4.3.4-alpha.1
 - Bump version to geode 5.x @ GD 2.2081
 - Better mod name (?)
 
-# 3.4.0
+# 3.3.4
 - Better mod desc
 - This mod is complete as planned and no more features will be added during this gd version
 
