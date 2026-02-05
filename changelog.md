@@ -1,3 +1,7 @@
+# 4.4.0
+- Bump version to geode 5.x @ GD 2.2081
+- Better mod name (?)
+
 # 3.4.0
 - Better mod desc
 - This mod is complete as planned and no more features will be added during this gd version
@@ -23,7 +27,7 @@ Animation returns
 Almost nothing but fix a gd version tag.  
   
 # 3.2.0-alpha.1
-Bump version to Geode 4.x@GD 2.2074  
+Bump version to Geode 4.x @ GD 2.2074  
 <cy>no animation for now, plz wait a while</c>  
   
 # 2.2.0

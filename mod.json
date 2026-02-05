@@ -1,23 +1,23 @@
 {
-	"geode": "4.9.0",
+	"geode": "5.0.0-alpha.1",
 	"gd": {
-		"win":"2.2074",
-		"android":"2.2074",
-		"mac":"2.2074",
-		"ios":"2.2074"
+		"win":"2.2081",
+		"android":"2.2081",
+		"mac":"2.2081",
+		"ios":"2.2081"
 	},
-	"version": "v3.3.4",
+	"version": "v4.4.0-alpha.1",
 	"id": "naxrin.garage_in_editor",
-	"name": "Garage In Editor",
+	"name": "More Garage Ropes",
 	"developer": "Naxrin",
-	"description": "Extra garage entries",
+	"description": "The small QoL mod with extra garage entries",
 	"tags": ["interface"],
 	"links": {
 		"source": "https://github.com/Naxrin/Garage-in-Editor"
 	},
 	"dependencies": {
 		"geode.node-ids": {
-			"version": "v1.20.0",
+			"version": "v1.22.0-beta.1",
 			"importance": "required"
 		}
 	},
