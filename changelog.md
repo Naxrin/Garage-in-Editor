@@ -1,4 +1,4 @@
-# 4.3.4-alpha.1
+# 4.3.4-beta.1
 - Bump version to geode 5.x @ GD 2.2081
 - Better mod name (?)
 
