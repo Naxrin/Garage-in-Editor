@@ -34,12 +34,6 @@
 				"slider-step": 0.1
 			}
         },
-		"transparent": {
-            "name": "Remove Frame",
-            "description": "Remove the two frames from EditLevelLayer",
-            "type": "bool",
-            "default": false
-        },
 		"official": {
             "name": "Official Levels Browser",
             "description": "Add to Official Levels Browser (LevelSelectLayer)",

@@ -8,8 +8,6 @@ And the rope does exactly the same as the one in **LevelInfoLayer** (entrance of
 ### <cy>Settings</c>
 #### <cy>Placement Offset</c>
 Moves the added rope left or right regarding the value is set to negative or positive.
-#### <cy>Transparent Texture Fit</c>
-Removes the two blue frames to avoid them getting covered by the garage rope and makes the UI looks bad.  
 
 ### <cy>Special Thanks</c>
 Huge Thanks to @TheSillyDoggo for helping with the callback function!

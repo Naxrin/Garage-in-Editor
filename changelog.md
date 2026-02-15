@@ -1,3 +1,8 @@
+
+# 4.3.5
+- Remove Transparent Frames option, Go download Transparent Background if you need
+- Prettify mod desc
+
 # 4.3.4
 - Rebuild for geode 5.0.0-beta.1 and later
 - Nothing more

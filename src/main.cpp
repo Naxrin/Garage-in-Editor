@@ -32,11 +32,6 @@ class $modify(EditLevelLayer) {
 		btn->m_offset = CCPoint(0.f, -8.f);
 		menu->addChild(btn);
 
-		// transparent
-		if (Mod::get()->getSettingValue<bool>("transparent")) {
-			this->getChildByID("level-name-background")->setVisible(false);
-			this->getChildByID("description-background")->setVisible(false);
-		}
 		return true;
 	}
 };
