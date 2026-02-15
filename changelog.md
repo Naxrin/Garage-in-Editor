@@ -1,3 +1,7 @@
+# 4.3.4
+- Rebuild for geode 5.0.0-beta.1 and later
+- Nothing more
+
 # 4.3.4-beta.2
 - Rebuild for geode 5.0.0-alpha.2
 - Nothing more
