@@ -6,12 +6,12 @@
 		"mac":"2.2081",
 		"ios":"2.2081"
 	},
-	"version": "v4.3.4",
+	"version": "v4.3.5",
 	"id": "naxrin.garage_in_editor",
 	"name": "More Garage Ropes",
 	"developer": "Naxrin",
 	"description": "The tiny QoL mod with extra garage entries",
-	"tags": ["interface"],
+	"tags": ["interface", "offline"],
 	"links": {
 		"source": "https://github.com/Naxrin/Garage-in-Editor"
 	},
