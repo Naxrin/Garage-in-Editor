@@ -2,10 +2,16 @@
 
 using namespace geode::prelude;
 
-static bool special = false;
+// animation instead of replacing the scene with MenuLayer
+static void pushGarageScene() {
+	auto scene = GJGarageLayer::scene();
+	auto effect = CCTransitionMoveInT::create(0.4, scene);
+	CCDirector::sharedDirector()->pushScene(effect);
+	GameManager::get()->m_ropeGarageEnter = true;
+}
 
 #include <Geode/modify/EditLevelLayer.hpp>
-class $modify(EditLevelLayer) {
+class $modify(MyEditLevelLayer, EditLevelLayer) {
 	bool init(GJGameLevel* p) {
 		if (!EditLevelLayer::init(p))
 			return false;
@@ -26,7 +32,7 @@ class $modify(EditLevelLayer) {
 		auto btn = CCMenuItemSpriteExtra::create(
 			spr,
 			this,
-			menu_selector(LevelInfoLayer::onGarage));
+			menu_selector(MyEditLevelLayer::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
 		btn->m_startPosition = CCPoint(18.875, 35.25);
 		btn->m_offset = CCPoint(0.f, -8.f);
@@ -34,17 +40,9 @@ class $modify(EditLevelLayer) {
 
 		return true;
 	}
-};
 
-#include <Geode/modify/GJGarageLayer.hpp>
-class $modify(MyGarageLayer, GJGarageLayer) {
-public:
-	void onBack(CCObject* sender) {
-		if (special)
-			CCDirector::get()->popSceneWithTransition(0.5f, PopTransition::kPopTransitionFade);
-		else
-			GJGarageLayer::onBack(sender);
-		special = false;
+	void onGarage(CCObject* sender) {
+		pushGarageScene();
 	}
 };
 
@@ -77,14 +75,11 @@ class $modify(OfficialBrowser, LevelSelectLayer) {
 		btn->m_startPosition = CCPoint(18.875, 35.25);
 		btn->m_offset = CCPoint(0.f, -8.f);
 		menu->addChild(btn);
-		
+
 		return true;
 	}
 
 	void onGarage(CCObject* sender) {
-		special = true;
-		auto scene = MyGarageLayer::scene();
-		auto effect = CCTransitionMoveInT::create(0.4, scene);
-		CCDirector::sharedDirector()->pushScene(effect);
+		pushGarageScene();
 	}
 };

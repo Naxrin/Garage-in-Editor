@@ -1,3 +1,6 @@
+# 5.3.6
+- Bump version to geode 6.x @ GD 2.2091
+- Now GJGarageLayer -> LevelBrowserLayer transition plays move effect normally, instead of fading.
 
 # 4.3.5
 - Remove Transparent Frames option, Go download Transparent Background if you need
