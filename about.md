@@ -10,10 +10,10 @@ And the rope does exactly the same as the one in **LevelInfoLayer** (entrance of
 Moves the added rope left or right regarding the value is set to negative or positive.
 
 ### <cy>Special Thanks</c>
-Huge Thanks to @TheSillyDoggo for helping with the callback function!
+Huge Thanks to @TheSillyDoggo for early help with the callback function!  
+Though it's now unused
 
 ### <cy>Contact / Report Bugs</c>
-- Github issue
-- Discord: [Naxrin#6957](https://discordapp.com/users/414986613962309633) (recommended)  
-- Twitter / X: [@Naxrin19](https://x.com/Naxrin19) (not really check it often)
-- In-Game ID: Naxrin
+- Github: [Post an Issue](https://github.com/Naxrin/Garage-in-Editor/issues)
+- Discord: [Naxrin#6957](https://discordapp.com/users/414986613962309633)
+- In-Game ID: [Naxrin](user:4759632)

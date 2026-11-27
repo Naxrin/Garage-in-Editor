@@ -1,12 +1,12 @@
 {
-	"geode": "6.0.0-beta.1",
+	"geode": "6.0.0",
 	"gd": {
 		"win":"2.2091",
 		"android":"2.2091",
 		"mac":"2.2091",
 		"ios":"2.2091"
 	},
-	"version": "v5.3.6",
+	"version": "v5.3.7",
 	"id": "naxrin.garage_in_editor",
 	"name": "More Garage Ropes",
 	"developer": "Naxrin",
@@ -38,7 +38,19 @@
             "name": "Official Levels Browser",
             "description": "Add to Official Levels Browser (LevelSelectLayer)",
             "type": "bool",
-            "default": false
-        }
+            "default": true
+        },
+		"editor": {
+			"name": "Editor Garage",
+			"description": "Add the garage button to the editor.",
+			"type": "bool",
+			"default": true
+		},
+		"hide-vanilla": {
+			"name": "Hide Vanilla Garage",
+			"description": "Hide the original garage button in level entrance.",
+			"type": "bool",
+			"default": false
+		}
 	}
 }

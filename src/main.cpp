@@ -10,11 +10,31 @@ static void pushGarageScene() {
 	GameManager::get()->m_ropeGarageEnter = true;
 }
 
+// ridiculous feature
+#include <Geode/modify/LevelInfoLayer.hpp>
+class $modify(MyLevelInfoLayer, LevelInfoLayer) {
+	bool init(GJGameLevel* p) {
+		if (!LevelInfoLayer::init(p))
+			return false;
+
+		if (!Mod::get()->getSettingValue<bool>("hide-vanilla"))
+			return true;
+		// hide the original garage button
+		if (auto menu = this->getChildByID("garage-menu"))
+			menu->setVisible(false);
+		
+		return true;
+	}
+};
+
 #include <Geode/modify/EditLevelLayer.hpp>
 class $modify(MyEditLevelLayer, EditLevelLayer) {
 	bool init(GJGameLevel* p) {
 		if (!EditLevelLayer::init(p))
 			return false;
+
+		if (!Mod::get()->getSettingValue<bool>("editor"))
+			return true;
 
 		// win size reference
 		auto winSize = CCDirector::sharedDirector()->getWinSize();

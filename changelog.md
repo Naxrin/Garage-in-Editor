@@ -1,3 +1,12 @@
+# 5.3.8
+- Now it's optional not to add the edit level entrance button or hide the vanilla garage rope in saved level entrance,if anyone really wants such a ridiculous feature
+- Now official level browser rope is added by default (only for new users)
+- Better desc
+
+# 5.3.7
+- Bump Version to stable geode
+- Better desc
+
 # 5.3.6
 - Bump version to geode 6.x @ GD 2.2091
 - Now GJGarageLayer -> LevelBrowserLayer transition plays move effect normally, instead of fading.
