@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"geode.node-ids": {
-			"version": "v1.24.0-beta.1",
+			"version": "v1.24.0",
 			"required": true
 		}
 	},

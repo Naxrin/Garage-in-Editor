@@ -13,8 +13,8 @@ static void pushGarageScene() {
 // ridiculous feature
 #include <Geode/modify/LevelInfoLayer.hpp>
 class $modify(MyLevelInfoLayer, LevelInfoLayer) {
-	bool init(GJGameLevel* p) {
-		if (!LevelInfoLayer::init(p))
+	bool init(GJGameLevel* p, bool challenge) {
+		if (!LevelInfoLayer::init(p, challenge))
 			return false;
 
 		if (!Mod::get()->getSettingValue<bool>("hide-vanilla"))
@@ -41,21 +41,21 @@ class $modify(MyEditLevelLayer, EditLevelLayer) {
 
 		// menu
 		auto menu = CCMenu::create();
-		menu->setID("garage-menu");
+		menu->setID("garage-menu"_spr);
 		float offset = Mod::get()->getSettingValue<double>("offset");
-			menu->setPosition(winSize.width - 85.f + offset, winSize.height - 25.f);
+		menu->setPosition(ccp(winSize.width - 85.f + offset, winSize.height - 25.f));
 		this->addChild(menu);
 
 		// button
 		auto spr = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
-		spr->setPosition(CCPoint(18.875, 35.250));
+		spr->setPosition(ccp(18.875, 35.250));
 		auto btn = CCMenuItemSpriteExtra::create(
 			spr,
 			this,
 			menu_selector(MyEditLevelLayer::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
-		btn->m_startPosition = CCPoint(18.875, 35.25);
-		btn->m_offset = CCPoint(0.f, -8.f);
+		btn->m_startPosition = ccp(18.875, 35.25);
+		btn->m_offset = ccp(0.f, -8.f);
 		menu->addChild(btn);
 
 		return true;
@@ -79,21 +79,21 @@ class $modify(OfficialBrowser, LevelSelectLayer) {
 
 		// menu
 		auto menu = CCMenu::create();
-		menu->setID("garage-menu");
+		menu->setID("garage-menu"_spr);
 		float offset = Mod::get()->getSettingValue<double>("offset");
 			menu->setPosition(winSize.width - 85.f + offset, winSize.height - 25.f);
 		this->addChild(menu);
 
 		// button
 		auto spr = ButtonSprite::createWithSpriteFrameName("garageRope_001.png");
-		spr->setPosition(CCPoint(18.875, 35.250));
+		spr->setPosition(ccp(18.875, 35.250));
 		auto btn = CCMenuItemSpriteExtra::create(
 			spr,
 			this,
 			menu_selector(OfficialBrowser::onGarage));
 		btn->m_animationType = MenuAnimationType::Move;
-		btn->m_startPosition = CCPoint(18.875, 35.25);
-		btn->m_offset = CCPoint(0.f, -8.f);
+		btn->m_startPosition = ccp(18.875, 35.25);
+		btn->m_offset = ccp(0.f, -8.f);
 		menu->addChild(btn);
 
 		return true;
