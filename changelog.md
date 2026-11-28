@@ -1,9 +1,6 @@
-# 5.3.8
+# 5.3.7
 - Now it's optional not to add the edit level entrance button or hide the vanilla garage rope in saved level entrance,if anyone really wants such a ridiculous feature
 - Now official level browser rope is added by default (only for new users)
-- Better desc
-
-# 5.3.7
 - Bump Version to stable geode
 - Better desc
 
